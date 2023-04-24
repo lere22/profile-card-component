@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+	/* Colors */
+	--primary-dark-cyan: hsl(185, 75%, 39%);
+	--primary-very-dark-desaturated-blue: hsl(229, 23%, 23%);
+	--primary-dark-grayish-blue: hsl(227, 10%, 46%);
+	--neutral-dark-gray: hsl(0, 0%, 59%);
+	--white: hsl(0, 0%, 100%);
+
+	/* Typography */
+	--family-kumbh-sans: "Kumbh Sans", sans-serif;
+	--fw-400: 400;
+	--fw-700: 700;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	border: none;
+	list-style: none;
+	outline: none;
+}
+
+body {
+	min-height: 99vh;
+	font-family: var(--family-kumbh-sans);
+	background: url(../images/bg-pattern-bottom.svg) bottom -670px right -235px no-repeat, url(../images/bg-pattern-top.svg) top -550px left -350px no-repeat;
+	background-color: var(--primary-dark-cyan);
+	color: var(--neutral-dark-gray);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+main {
+	margin: auto;
+	overflow: hidden;
+	width: 90%;
+	max-width: 23rem;
+	background-color: var(--white);
+	border-radius: 15px;
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
+	text-align: center;
+}
+
+.header img {
+	width: 100%;
+}
+
+.content img {
+	border-radius: 50%;
+	transform: translateY(-50%);
+	border: 5px solid var(--white);
+}
+
+.content p {
+	transform: translateY(-150%);
+}
+
+.content__name {
+	font-size: 1.3rem;
+	font-weight: var(--fw-700);
+	color: var(--primary-very-dark-desaturated-blue);
+}
+
+.content__age {
+	padding-left: 0.4rem;
+	font-weight: var(--fw-400);
+	color: var(--neutral-dark-gray);
+}
+
+.content__location {
+	font-weight: var(--fw-400);
+	color: var(--neutral-dark-gray);
+}
+
+.footer {
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 1.7rem 0;
+}
+
+ul {
+	display: flex;
+	justify-content: center;
+}
+
+li {
+	display: flex;
+	flex-direction: column;
+	gap: 0.3rem;
+	padding: 0 1.5rem;
+}
+
+.footer__status {
+	font-size: 1.3rem;
+	font-weight: var(--fw-700);
+}
+
+.footer__category {
+	font-size: 0.8rem;
+	letter-spacing: 0.1rem;
+	color: var(--primary-dark-grayish-blue);
+}
+
+.footer--dark-blue {
+	color: var(--primary-very-dark-desaturated-blue);
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+	color: var(--primary-very-dark-desaturated-blue);
+}
+
+.attribution a {
+	color: var(--white);
+}
+
+.attribution a:hover {
+	text-decoration: underline;
+}
+
+@media screen and (max-width: 990px) {
+	body {
+		background: url(../images/bg-pattern-bottom.svg) bottom -600px right -640px no-repeat, url(../images/bg-pattern-top.svg) top -500px left -724px no-repeat;
+		background-color: var(--primary-dark-cyan);
+	}
+}
